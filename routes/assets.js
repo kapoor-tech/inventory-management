@@ -9,8 +9,8 @@ module.exports = (app, db) => {
 		db.Assets.findByPk(req.params.id).then( (result) => res.json(result))
 	);
 
-	app.post( "/assets", (req, res) => 
-		db.Shopping_Centers.findByPk(1)
+	app.post( "/assets/:id", (req, res) => 
+		db.Shopping_Centers.findByPk(req.params.id)
 		.then(shopping_centers => {
 			shopping_centers.createAsset({
 				name: req.body.name,
