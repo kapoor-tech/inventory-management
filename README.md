@@ -16,3 +16,20 @@ Attributes: _id_, _name(String)_, _address(String)_, _assets(association-id)_
 
 Table: `assets`
 Attributes: _id(association-id)_, _name(String)_, _dimensions(String)_, _location(String)_, _status(bool)_,
+
+## Making use of
+
+Express framework
+https://expressjs.com
+
+Postgresql
+https://www.postgresql.org/docs/
+
+Sequelize:
+http://docs.sequelizejs.com/manual/installation/usage.html
+
+## PSQL setup:
+
+- create superuser;
+- psql;
+- createuser -P -s -e developer; // Password: abc123
