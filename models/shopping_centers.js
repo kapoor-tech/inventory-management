@@ -5,7 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     address: DataTypes.STRING
   }, {});
   Shopping_Centers.associate = function(models) {
-    // associations can be defined here
+    // Shopping Center has many assets
+    models.Shopping_Centers.hasMany(models.Assets, {
+      foreignKey: 'shoppingCenterId',
+    });
   };
   return Shopping_Centers;
 };

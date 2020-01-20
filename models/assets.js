@@ -4,10 +4,15 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     dimensions: DataTypes.STRING,
     location: DataTypes.STRING,
-    status: DataTypes.BOOLEAN
+    status: DataTypes.BOOLEAN,
+    shoppingCenterId: DataTypes.INTEGER
   }, {});
+
   Assets.associate = function(models) {
-    // associations can be defined here
+    // Assets belong to Shopping Center
+    models.Assets.belongsTo(models.Shopping_Centers, {
+      foreignKey: 'shoppingCenterId',
+    });
   };
   return Assets;
 };

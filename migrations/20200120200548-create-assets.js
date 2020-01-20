@@ -20,6 +20,14 @@ module.exports = {
       status: {
         type: Sequelize.BOOLEAN
       },
+      shoppingCenterId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'Shopping_Centers',
+          key: 'id'
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

@@ -4,6 +4,7 @@ const db = require("./models/index");
 
 const apiUser = require("./routes/users");
 const apiShoppingCenters = require("./routes/shopping-centers");
+const apiAssets = require("./routes/assets");
 const apiLogin = require("./routes/login");
 const apiLogout = require("./routes/logout");
 
@@ -30,6 +31,7 @@ app.use(cors());
 // Routes
 apiUser(app, db);
 apiShoppingCenters(app, db);
+apiAssets(app, db);
 apiLogin(app, db);
 apiLogout(app, db);
 
