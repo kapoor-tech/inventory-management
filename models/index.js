@@ -15,6 +15,20 @@ if (config.use_env_variable) {
 	sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
+// tracking which user makes changes to the data
+const PaperTrail = require('sequelize-paper-trail').init(sequelize, config || {});
+PaperTrail.defineModels();
+
+const Users = sequelize.define('Users', {
+  first_name: Sequelize.STRING,
+	last_name: Sequelize.STRING,
+	email: Sequelize.STRING,
+	phone: Sequelize.STRING,
+	password: Sequelize.STRING
+});
+
+Users.Revisions = Users.hasPaperTrail();
+
 fs
 	.readdirSync(__dirname)
 	.filter(file => {
