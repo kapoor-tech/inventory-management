@@ -22,4 +22,15 @@ module.exports = (app, db) => {
 		})
 	);
 
+	app.put( "/assets/update-status/:id", (req, res) =>
+	db.Assets.update({
+		status: req.body.status,
+	},
+	{
+		where: {
+			id: req.params.id
+		}
+	}).then( (result) => res.json(result) )
+);
+
 };
