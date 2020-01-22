@@ -1,0 +1,16 @@
+[
+  {
+      "id": 1,
+      "name": "Pacific Mall",
+      "address": "West Delhi, Delhi",
+      "createdAt": "2020-01-20T20:40:48.460Z",
+      "updatedAt": "2020-01-20T20:40:48.460Z"
+  },
+  {
+      "id": 2,
+      "name": "Subhash Nagar Mall",
+      "address": "West Delhi, Delhi",
+      "createdAt": "2020-01-20T21:07:51.170Z",
+      "updatedAt": "2020-01-20T21:07:51.170Z"
+  }
+]

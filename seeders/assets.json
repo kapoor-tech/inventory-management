@@ -1,0 +1,32 @@
+[
+  {
+      "id": 1,
+      "name": null,
+      "dimensions": null,
+      "location": null,
+      "status": null,
+      "shoppingCenterId": 1,
+      "createdAt": "2020-01-20T23:25:42.131Z",
+      "updatedAt": "2020-01-20T23:25:42.131Z"
+  },
+  {
+      "id": 2,
+      "name": "Banner-1",
+      "dimensions": "10x12",
+      "location": "1st floor",
+      "status": true,
+      "shoppingCenterId": 1,
+      "createdAt": "2020-01-20T23:25:42.137Z",
+      "updatedAt": "2020-01-20T23:25:42.137Z"
+  },
+  {
+      "id": 3,
+      "name": "Banner-2",
+      "dimensions": "13x12",
+      "location": "2nd floor",
+      "status": false,
+      "shoppingCenterId": 2,
+      "createdAt": "2020-01-20T23:31:40.353Z",
+      "updatedAt": "2020-01-20T23:31:40.353Z"
+  }
+]

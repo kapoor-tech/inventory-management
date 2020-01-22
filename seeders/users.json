@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "first_name": "Ashish",
+        "last_name": "Kapoor",
+        "email": "ashish.kapoor@gmail.com",
+        "phone": "9899771880",
+        "password": "$2b$10$Fb6OvePsdBd45WlbCvMtue0BcbUG8opxS8Usi/4GvE2FdQdusxIYK",
+        "createdAt": "2020-01-19T10:34:46.878Z",
+        "updatedAt": "2020-01-19T10:34:46.878Z"
+    },
+    {
+        "id": 2,
+        "first_name": "Pulkit",
+        "last_name": "Kapoor",
+        "email": "pulkit.kapoor@gmail.com",
+        "phone": "9899771990",
+        "password": "$2b$10$YhY.isv1RYofpOfgrWIhbes7MNUnxBuBcyJAY/kZrPiFWHTX/s2rO",
+        "createdAt": "2020-01-20T20:25:35.778Z",
+        "updatedAt": "2020-01-20T20:25:35.778Z"
+    }
+]
