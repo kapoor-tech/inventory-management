@@ -1,5 +1,9 @@
 # inventory-management
 
+## Demo:
+![](./assets/db_graph.png)
+
+
 ## Platform
 
 A Shopping Centre is a mall like Pacific Mall (West Delhi); placed at key locations within the Shopping Centre are the Assets i.e. the physical panels. Shopping Centres must at a minimum have the attributes: Name, address, and have Assets associated with them.
