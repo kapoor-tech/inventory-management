@@ -2,11 +2,11 @@
 
 ### How to run the monorepo?
 
-`$ lerna bootstrap`
+$ `lerna bootstrap`
 
 then
 
-`$ yarn dev`
+$ `yarn dev`
 
 ```
 Note:
