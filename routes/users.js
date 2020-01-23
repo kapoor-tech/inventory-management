@@ -10,12 +10,12 @@ module.exports = (app, db) => {
 			})
 	);
 
-	app.get( "/users/:id", (req, res) =>
+	app.get( "/users/:id", checkAuth, (req, res) =>
 		db.Users.findByPk(req.params.id).then( (result) => res.json(result))
 	);
 
   
-	app.post( "/users", async (req, res) => {
+	app.post( "/users", checkAuth, async (req, res) => {
 		const salt = await bcrypt.genSalt(10);
 		db.Users.create({
 			first_name: req.body.first_name,
@@ -30,7 +30,7 @@ module.exports = (app, db) => {
 			});
 	});
 
-	app.put( "/users/:id", (req, res) =>
+	app.put( "/users/:id", checkAuth, (req, res) =>
 		db.Users.update({
 			title: req.body.title,
 			content: req.body.content
@@ -47,7 +47,7 @@ module.exports = (app, db) => {
 			})
 	);
 
-	app.delete( "/users/:id", (req, res) =>
+	app.delete( "/users/:id", checkAuth, (req, res) =>
 		db.Users.destroy({
 			where: {
 				id: req.params.id

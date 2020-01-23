@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 
 module.exports = (app, db) => {
 	app.post("/login", (req, res) => {
+		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:9000');
 		const { email, password } = req.body;
 		if (!email || !password) {
 			return res.status(400).send(
