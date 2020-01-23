@@ -1,11 +1,15 @@
 # inventory-management
 
+![](/assets/record.gif)
+
 ## Platform
 
 A Shopping Centre is a mall like Pacific Mall (West Delhi); placed at key locations within the Shopping Centre are the Assets i.e. the physical panels. Shopping Centres must at a minimum have the attributes: Name, address, and have Assets associated with them.
 
 An Asset is a physical screen which receives advertisement and other content throughout the day. It has physical attributes such as its dimensions, a location within the shopping centre, and a status indicating whether it is active to receive content or offline for
-maintenance. Assets must at a minimum have the attributes: Name, physical dimensions, associated Shopping Centre, location within the centre, and status.
+maintenance.
+
+Assets must at a minimum have the attributes: Name, physical dimensions, associated Shopping Centre, location within the centre, and status.
 
 ## Schema
 
