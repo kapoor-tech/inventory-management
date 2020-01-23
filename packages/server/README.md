@@ -1,6 +1,6 @@
 # inventory-management
 
-## Demo:
+## Database Graph:
 ![](./assets/db_graph.png)
 
 
