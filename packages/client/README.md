@@ -1,6 +1,9 @@
 # inventory-web
 Inventory web package
 
+## Demo:
+![](./public/assets/record.gif)
+
 ## features:
 
 ### 1. login 
