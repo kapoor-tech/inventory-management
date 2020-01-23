@@ -42,4 +42,11 @@ module.exports = (app, db) => {
 		})
 		.then( (result) => res.json(result) )
 	);
+	app.delete( "/assets/:id", checkAuth, (req, res) =>
+		db.Assets.destroy({
+			where: {
+				id: req.params.id
+			}
+		}).then( (result) => res.json(result) )
+	);
 };
