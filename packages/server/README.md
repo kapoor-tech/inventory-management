@@ -1,6 +1,6 @@
 # inventory-management
 
-![](/assets/record.gif)
+![](./assets/record.gif)
 
 ## Platform
 
