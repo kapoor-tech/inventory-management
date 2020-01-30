@@ -1,5 +1,5 @@
 const request = require('supertest');
-var host_url = 'http://localhost:3000'
+const host_url = 'http://localhost:3000'
 
 describe('POST /login', function() {
   it('user login', function(done) {
